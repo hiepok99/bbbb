@@ -34,48 +34,48 @@ local MiscTab = MakeTab({Name = "Misc"})
 AddButton(FarmTab, {
     Name = "Auto Farm Level",
     Callback = function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/hiepok99/hh/refs/heads/main/hhhhu"))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/hiepok99/bbbb/refs/heads/main/bbb"))()
     end
 })
 
 AddButton(FarmTab, {
     Name = "Auto Farm Bounty",
     Callback = function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/hiepok99/hh/refs/heads/main/hhhhu"))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/hiepok99/bbbb/refs/heads/main/bbb"))()
     end
 })
 
 AddButton(CombatTab, {
     Name = "Kill Aura",
     Callback = function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/hiepok99/hh/refs/heads/main/hhhhu"))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/hiepok99/bbbb/refs/heads/main/bbb"))()
     end
 })
 
 AddButton(CombatTab, {
     Name = "Auto Haki",
     Callback = function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/hiepok99/hh/refs/heads/main/hhhhu"))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/hiepok99/bbbb/refs/heads/main/bbb"))()
     end
 })
 
 AddButton(MiscTab, {
     Name = "ESP Players & Bosses",
     Callback = function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/hiepok99/hh/refs/heads/main/hhhhu"))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/hiepok99/bbbb/refs/heads/main/bbb"))()
     end
 })
 
 AddButton(MiscTab, {
     Name = "Teleport Hack",
     Callback = function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/hiepok99/hh/refs/heads/main/hhhhu"))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/hiepok99/bbbb/refs/heads/main/bbb"))()
     end
 })
 
 AddButton(MiscTab, {
     Name = "Anti Ban",
     Callback = function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/hiepok99/hh/refs/heads/main/hhhhu"))()
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/hiepok99/bbbb/refs/heads/main/bbb"))()
     end
 })
