@@ -1,81 +1,77 @@
---// BLOX FRUITS OP SCRIPT //
+--// Blox Fruits Full Hack Script
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/hiepok99/bbbb/refs/heads/main/bbb"))()
+local Window = Library:CreateWindow("Blox Fruits HUB")
 
-local Window = MakeWindow({
-    Hub = {
-        Title = "TBoy Roblox - OP Script",
-        Animation = "Youtube: TBoy Roblox"
-    },
-    Key = {
-        KeySystem = false,
-        Title = "Key System",
-        Keys = {"1234"},
-        Notifi = {
-            Notifications = true,
-            CorrectKey = "Running the Script...",
-            Incorrectkey = "The key is incorrect"
-        }
-    }
-})
-
-MinimizeButton({
-    Image = "http://www.roblox.com/asset/?id=83190276951914",
-    Size = {60, 60},
-    Color = Color3.fromRGB(10, 10, 10),
-    Corner = true,
-    Stroke = false
-})
-
------- Tabs
-local FarmTab = MakeTab({Name = "Auto Farm"})
-local CombatTab = MakeTab({Name = "Combat"})
-local MiscTab = MakeTab({Name = "Misc"})
-
-------- BUTTONS
-AddButton(FarmTab, {
-    Name = "Auto Farm Level",
-    Callback = function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/hiepok99/bbbb/refs/heads/main/bbb"))()
+--// Auto Farm
+local AutoFarmTab = Window:CreateTab("Auto Farm")
+AutoFarmTab:CreateToggle("Auto Farm Level", function(state)
+    _G.AutoFarm = state
+    while _G.AutoFarm do
+        -- Code Auto Farm Level
+        task.wait()
     end
-})
+end)
 
-AddButton(FarmTab, {
-    Name = "Auto Farm Bounty",
-    Callback = function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/hiepok99/bbbb/refs/heads/main/bbb"))()
+AutoFarmTab:CreateToggle("Auto Farm Boss", function(state)
+    _G.AutoFarmBoss = state
+    while _G.AutoFarmBoss do
+        -- Code Auto Farm Boss
+        task.wait()
     end
-})
+end)
 
-AddButton(CombatTab, {
-    Name = "Kill Aura",
-    Callback = function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/hiepok99/bbbb/refs/heads/main/bbb"))()
+--// Auto Race V4
+local RaceV4Tab = Window:CreateTab("Auto Race V4")
+RaceV4Tab:CreateToggle("Auto Race Trial", function(state)
+    _G.AutoRaceTrial = state
+    while _G.AutoRaceTrial do
+        -- Code Auto Race V4
+        task.wait()
     end
-})
+end)
 
-AddButton(CombatTab, {
-    Name = "Auto Haki",
-    Callback = function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/hiepok99/bbbb/refs/heads/main/bbb"))()
+RaceV4Tab:CreateToggle("Auto Mirror Fractal", function(state)
+    _G.AutoMirrorFractal = state
+    while _G.AutoMirrorFractal do
+        -- Code Farm Mirror Fractal
+        task.wait()
     end
-})
+end)
 
-AddButton(MiscTab, {
-    Name = "ESP Players & Bosses",
-    Callback = function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/hiepok99/bbbb/refs/heads/main/bbb"))()
+--// Auto Fruit
+local FruitTab = Window:CreateTab("Auto Fruit")
+FruitTab:CreateToggle("ESP Fruit", function(state)
+    _G.ESP_Fruit = state
+    while _G.ESP_Fruit do
+        -- Code ESP Fruit
+        task.wait()
     end
-})
+end)
 
-AddButton(MiscTab, {
-    Name = "Teleport Hack",
-    Callback = function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/hiepok99/bbbb/refs/heads/main/bbb"))()
+FruitTab:CreateToggle("Auto Buy Fruit", function(state)
+    _G.AutoBuyFruit = state
+    while _G.AutoBuyFruit do
+        -- Code Auto Buy Fruit
+        task.wait()
     end
-})
+end)
 
-AddButton(MiscTab, {
-    Name = "Anti Ban",
-    Callback = function()
-        loadstring(game:HttpGet("https://raw.githubusercontent.com/hiepok99/bbbb/refs/heads/main/bbb"))()
-    end
-})
+--// Misc (God Mode, Speed, TP)
+local MiscTab = Window:CreateTab("Misc")
+MiscTab:CreateToggle("God Mode", function(state)
+    _G.GodMode = state
+    -- Code God Mode
+end)
+
+MiscTab:CreateToggle("Speed Hack", function(state)
+    _G.SpeedHack = state
+    -- Code Speed Hack
+end)
+
+MiscTab:CreateToggle("Teleport Hack", function(state)
+    _G.TPHack = state
+    -- Code TP Hack
+end)
+
+--// Start UI
+Library:Init()
